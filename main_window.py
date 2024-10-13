@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import (QWidget, QLabel,
                               QGroupBox, QButtonGroup,
                                QVBoxLayout, QHBoxLayout 
                                )
-
+from PyQt6.QtCore import Qt
 card_with, card_height = 600, 500
  
 window = QWidget()
@@ -52,6 +52,9 @@ radio_button_box_v_line.addLayout(radio_button_box_h_line2)
 
 radio_button_box.setLayout(radio_button_box_v_line)
 
+menu_btn = QPushButton("Меню")
+
+main_v_line.addWidget(menu_btn, stretch=1, alignment=Qt.AlignmentFlag.AlignLeft)
 main_v_line.addWidget(question_lb)
 main_v_line.addWidget(radio_button_box)
 
