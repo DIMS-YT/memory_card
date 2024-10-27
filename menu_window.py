@@ -18,65 +18,44 @@ menu_h_line_4 = QHBoxLayout()
 menu_h_line_5 = QHBoxLayout()
 menu_h_line_6 = QHBoxLayout()
 
-menu_question_text_lb = QLabel("Введіть текст питання:")
+menu_question_text_lb = QLabel("ВВедіть текст питання:")
 menu_question_text_input = QLineEdit()
 
 menu_h_line_1.addWidget(menu_question_text_lb)
 menu_h_line_1.addWidget(menu_question_text_input)
 menu_v_line.addLayout(menu_h_line_1)
 
-
-menu_answer_text_lb = QLabel("Введіть текст відповіді:")
+menu_answer_text_lb = QLabel("Введіть текст відповіді")
 menu_answer_text_input = QLineEdit()
-
 menu_h_line_2.addWidget(menu_answer_text_lb)
 menu_h_line_2.addWidget(menu_answer_text_input)
 menu_v_line.addLayout(menu_h_line_2)
-
-
-menu_wrong1_text_lb = QLabel("Введіть текст неправильної відповіді:")
-menu_wrong1_text_input = QLineEdit()
-
-menu_h_line_3.addWidget(menu_answer_text_lb)
-menu_h_line_3.addWidget(menu_answer_text_input)
+menu_wrong_1_lb = QLabel("Введіть текст неправильного варіанту")
+menu_wrong_1_input = QLineEdit()
+menu_h_line_3.addWidget(menu_wrong_1_lb)
+menu_h_line_3.addWidget(menu_wrong_1_input)
 menu_v_line.addLayout(menu_h_line_3)
 
-
-menu_wrong3_text_lb = QLabel("Введіть текст неправильної відповіді:")
-menu_wrong3_text_input = QLineEdit()
-
-menu_h_line_4.addWidget(menu_answer_text_lb)
-menu_h_line_4.addWidget(menu_answer_text_input)
+menu_wrong_2_lb = QLabel("Введіть текст неправильного варіанту")
+menu_wrong_2_input = QLineEdit()
+menu_h_line_4.addWidget(menu_wrong_2_lb)
+menu_h_line_4.addWidget(menu_wrong_2_input)
 menu_v_line.addLayout(menu_h_line_4)
-
-
-menu_wrong4_text_lb = QLabel("Введіть текст неправильної відповіді:")
-menu_wrong4_text_input = QLineEdit()
-
-menu_h_line_5.addWidget(menu_answer_text_lb)
-menu_h_line_5.addWidget(menu_answer_text_input)
+menu_wrong_3_lb = QLabel("Введіть текст неправильного варіанту")
+menu_wrong_3_input = QLineEdit()
+menu_h_line_5.addWidget(menu_wrong_3_lb)
+menu_h_line_5.addWidget(menu_wrong_3_input)
 menu_v_line.addLayout(menu_h_line_5)
 
-
-menu_add_text_lb = QPushButton("Додати:")
-menu_add_text_input = QPushButton()
-
-menu_h_line_6.addWidget(menu_answer_text_lb)
-menu_h_line_6.addWidget(menu_answer_text_input)
+menu_btn_add = QPushButton("Додати питання")
+menu_btn_clear = QPushButton("Очистити")
+menu_h_line_6.addWidget(menu_btn_add)
+menu_h_line_6.addWidget(menu_btn_clear)
 menu_v_line.addLayout(menu_h_line_6)
 
 
-menu_clear_text_lb = QLabel("Введіть текст відповіді:")
-menu_clear_text_input = QLineEdit()
-
-menu_h_line_6.addWidget(menu_answer_text_lb)
-menu_h_line_6.addWidget(menu_answer_text_input)
-menu_v_line.addLayout(menu_h_line_6)
-
-
-
-
-
+menu_back_btn = QPushButton("Назад")
+menu_v_line.addWidget(menu_back_btn)
 
 
 
